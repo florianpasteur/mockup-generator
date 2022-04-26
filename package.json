@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Generate mockup from screenshots",
   "main": "index.js",
+  "git": "git@github.com:florianpasteur/mockup-generator.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
