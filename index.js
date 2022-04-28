@@ -2,7 +2,7 @@ const Jimp = require('jimp');
 
 async function appWindow(screenshotFile, destinationFile, mockupFile, zoom) {
   const screenshot = await Jimp.read(screenshotFile);
-  const mask = await Jimp.read('assets/window-content-mask-full.png');
+  const mask = await Jimp.read(`${__dirname}/assets/window-content-mask-full.png`);
   const browserMockup = await Jimp.read(mockupFile);
 
   screenshot.resize(1280 * zoom * 2, 708 * zoom * 2);
@@ -19,10 +19,10 @@ async function appWindow(screenshotFile, destinationFile, mockupFile, zoom) {
 
 module.exports = {
   browser: async function (screenshot, destinationFile) {
-    return appWindow(screenshot, destinationFile, 'assets/browser-overlay.png', 1);
+    return appWindow(screenshot, destinationFile, `${__dirname}/assets/browser-overlay.png`, 1);
   },
   application: async function (screenshot, destinationFile) {
-    return appWindow(screenshot, destinationFile, 'assets/application-overlay.png', 1);
+    return appWindow(screenshot, destinationFile, `${__dirname}/assets/application-overlay.png`, 1);
   },
   monitor: async function (screenshot, destinationFile) {
     throw new Error("Unsupported operation")
