@@ -3,7 +3,7 @@ const Jimp = require('jimp');
 async function appWindow(screenshotFile, destinationFile, mockupFile) {
   const screenshot = await Jimp.read(screenshotFile);
   const mask = await Jimp.read('assets/window-content-mask-full.png');
-  const browserMockup = await Jimp.read('assets/browser-overlay.png');
+  const browserMockup = await Jimp.read(mockupFile);
   const browserPlaceholder = browserMockup.clone();
 
   screenshot.resize(1280, 708);
