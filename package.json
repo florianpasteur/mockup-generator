@@ -1,6 +1,6 @@
 {
   "name": "mockup-generator",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "description": "Generate mockup from screenshots",
   "main": "index.js",
   "git": "git@github.com:florianpasteur/mockup-generator.git",
