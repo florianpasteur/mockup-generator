@@ -1,6 +1,6 @@
 {
   "name": "mockup-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate mockup from screenshots",
   "main": "index.js",
   "git": "git@github.com:florianpasteur/mockup-generator.git",
@@ -11,6 +11,6 @@
   "author": "Florian PASTEUR",
   "license": "MIT",
   "dependencies": {
-    "jimp": "^0.16.1",
+    "jimp": "^0.16.1"
   }
 }
